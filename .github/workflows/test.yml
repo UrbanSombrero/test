@@ -1,6 +1,6 @@
 name: Test
 run-name: Testing
-on: [workflow-dispatch]
+on: [workflow_dispatch]
 jobs:
   beep-boop:
     runs-on: ubuntu-latest
