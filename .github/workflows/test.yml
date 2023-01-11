@@ -31,3 +31,5 @@ jobs:
           echo '_ci_build="true"' >> customization.cfg
           touch tarplz
           yes|./non-makepkg-build.sh
+          ./non-makepkg-build.sh --deps64
+          ./non-makepkg-build.sh --deps32
