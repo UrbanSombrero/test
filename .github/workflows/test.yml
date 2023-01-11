@@ -5,6 +5,7 @@ on:
     inputs:
       preset:
         type: string
+        default: "default-tkg"
         description: Wine preset
       version:
         type: string
