@@ -17,9 +17,9 @@ jobs:
       - name: Set up
         run: |
           sudo dpkg --add-architecture i386 && sudo apt-get update
-          sudo apt-get install libkrb5-dev
+          sudo apt-get install libkrb5-dev libxpresent-dev
           sudo sed -i -e 's/-flto=auto -ffat-lto-objects -flto=auto //' /usr/bin/krb5-config.mit
-          sudo apt-get install libkrb5-dev:i386
+          sudo apt-get install libkrb5-dev:i386 libxpresent-dev:i386
       - name: Check out
         uses: actions/checkout@v2
         with:
