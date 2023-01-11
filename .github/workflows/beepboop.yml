@@ -1,7 +1,7 @@
 name: beepboop
 run-name: beepin and boopin
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     inputs:
       beep:
         type: string
