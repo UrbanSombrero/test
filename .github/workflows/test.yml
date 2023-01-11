@@ -16,8 +16,8 @@ jobs:
         with:
           repository: 'Frogging-Family/wine-tkg-git'
       - name: Configure
+        working-directory: ./wine-tkg-git
         run: |
-          cd wine-tkg-git
           ./configure --deps64
           ./configure --deps32
         
